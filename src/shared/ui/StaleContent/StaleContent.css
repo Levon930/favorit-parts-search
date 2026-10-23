@@ -1,0 +1,13 @@
+.stale-content {
+  transition: opacity 0.2s;
+}
+
+.stale-content[data-stale='true'] {
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stale-content {
+    transition: none;
+  }
+}

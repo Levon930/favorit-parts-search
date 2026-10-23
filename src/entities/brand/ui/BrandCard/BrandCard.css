@@ -1,0 +1,31 @@
+.brand-card {
+  border: 2px solid transparent;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s,
+    border-color 0.15s;
+}
+
+.brand-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--bs-box-shadow) !important;
+}
+
+.brand-card:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25) !important;
+}
+
+.brand-card.is-selected {
+  border-color: var(--bs-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-card {
+    transition: none;
+  }
+
+  .brand-card:hover {
+    transform: none;
+  }
+}

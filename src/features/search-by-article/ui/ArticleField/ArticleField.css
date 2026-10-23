@@ -1,0 +1,24 @@
+.article-field {
+  position: relative;
+}
+
+.article-field > svg {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  color: var(--bs-secondary-color);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.article-field > .form-control {
+  padding-left: 2.75rem;
+  padding-right: 3rem;
+}
+
+.article-field > .spinner-border {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  margin-top: -0.5rem;
+}
